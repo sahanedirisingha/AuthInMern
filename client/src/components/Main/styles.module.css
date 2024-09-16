@@ -1,27 +1,119 @@
+/* This keeps your top bar styling intact */
 .navbar {
 	width: 100%;
 	height: 70px;
-	background-color: #3bb19b;
+	background-color: #071412;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 20px; /* Add padding to the left and right */
+	box-sizing: border-box; /* Ensure padding does not affect width */
+	position: fixed;
 }
 
 .navbar h1 {
 	color: white;
 	font-size: 25px;
-	margin-left: 20px;
+	margin: 0; /* Remove margin to align correctly */
 }
 
 .white_btn {
 	border: none;
 	outline: none;
-	padding: 12px 0;
+	padding: 12px 20px; /* Adjust padding for better alignment */
 	background-color: white;
 	border-radius: 20px;
-	width: 120px;
 	font-weight: bold;
 	font-size: 14px;
 	cursor: pointer;
-	margin-right: 20px;
+}
+
+.user_name {
+	color: white;
+	font-size: 16px;
+	margin-right: 20px; /* Reduce margin to move closer to the button */
+	white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navbar div { 
+	display: flex;
+	align-items: center; /* Align username and button vertically */
+}
+
+/* Styling for the image and buttons section (below the navbar) */
+.content_container {
+	display: flex;
+	justify-content: space-between; /* Image on the left, buttons on the right */
+	align-items: center;
+	padding: 20px;
+}
+
+.image_container {
+	flex: 1; /* Image takes up one portion of space */
+}
+
+.image_container img {
+	max-width: 80%; /* Make image slightly smaller */
+	height: auto;
+	border-radius: 10px; /* Add rounded corners to the image */
+	margin-top: 80px;
+}
+
+.buttons_container {
+	flex: 1; /* Buttons take up equal space on the right */
+	display: flex;
+	flex-direction: column; /* Stack buttons vertically */
+	align-items: flex-start; /* Align buttons to the left of the container */
+}
+
+.action_btn {
+	width: 250px; /* Increase width for larger buttons */
+	padding: 39px; /* Increase padding for larger button size */
+	font-size: 30px; /* Adjust font size for better readability */
+	font-weight: bold;
+	color: white; /* White text */
+	border: none; /* Remove borders */
+	border-radius: 10px; /* Rounded corners */
+	cursor: pointer;
+	margin-bottom: 130px; /* Space between buttons */
+	margin-right: 30px;
+	margin-top: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.action_btn:first-child {
+	background-color: #4CAF50; /* Green button for 'View Policies' */
+}
+
+.action_btn:first-child:hover {
+	background-color: #45a049; /* Darker green on hover */
+}
+
+.action_btn:nth-child(2) {
+	background-color: #f44336; /* Red button for 'Learn Policies' */
+}
+
+.action_btn:nth-child(2):hover {
+	background-color: #da190b; /* Darker red on hover */
+}
+
+.action_btn:nth-child(3) {
+	background-color: #2196F3; /* Blue button for 'Quizzes' */
+}
+
+.action_btn:nth-child(3):hover {
+	background-color: #0b7dda; /* Darker blue on hover */
+}
+
+/* Optional: Responsive design for smaller screens */
+@media (max-width: 600px) {
+	.buttons_container {
+		align-items: center; /* Center align buttons on small screens */
+	}
+	.action_btn {
+		width: 100%; /* Make buttons full width */
+	}
 }

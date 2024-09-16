@@ -1,0 +1,164 @@
+.admin_container {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #121314;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.logout_btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.logout_btn:hover {
+    background-color: #c82333;
+}
+
+.content {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    background-color: #22202042;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input_field, .textarea_field {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input_field {
+    margin-right: 5px; /* Spacing between input field and button */
+    margin: 10px;
+}
+.input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.textarea{
+    border-radius: 5px;
+}
+
+.textarea_field {
+    width: 40%;
+    margin-left: 5px; /* Spacing between textarea and input field */
+}
+
+.submit_btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+.submit_btn:hover {
+    background-color: #218838;
+}
+
+.textarea_field {
+    resize: vertical; /* Allows resizing only vertically */
+    min-height: 100px; /* Adjust as needed */
+}
+
+
+.policy_list {
+    width: 100%;
+    max-width: 1150px;
+}
+
+.policy_item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.policy_details {
+    margin-bottom: 10px;
+}
+
+.policy_details p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.edit_btn, .delete_btn {
+    background-color: #0a46ee;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    max-width: 100px;
+    margin-left: 1000px;
+}
+
+.edit_btn:hover {
+    background-color: #138496;
+}
+
+.delete_btn {
+    background-color: #dc3545;
+}
+
+.delete_btn:hover {
+    background-color: #c82333;
+}
